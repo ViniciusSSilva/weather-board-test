@@ -1,0 +1,16 @@
+{
+  "name": "gmobil-exercicio",
+  "version": "1.0.0",
+  "description": "Exercicio Gmobil API previsão do tempo com ExpressJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ViniciusSSilva",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "pug": "^3.0.2"
+  }
+}

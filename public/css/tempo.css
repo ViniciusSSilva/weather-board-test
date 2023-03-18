@@ -1,0 +1,46 @@
+.max-display {
+    min-width: 27.5em;
+    max-width: 40em;
+}
+
+.display-top {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.temp-celsius {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    padding-left: 6px;
+    margin-top: 6px;
+}
+
+.extra-info {
+    display:inline-block;
+    font-size: 12px;
+    padding:6px 0 0 9px;
+}
+
+.secondary-text {
+    color: #565a5e;
+}
+
+.container-day-card {
+    white-space:nowrap;
+    overflow-x:auto;
+    margin-top:5px;
+}
+
+.day-card {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 0px 5px;
+    min-width: 50px;
+    border-radius: 10px;
+}
+
+.day-card:hover {
+    background-color: #bdc1c6;
+}

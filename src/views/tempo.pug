@@ -1,0 +1,29 @@
+html(lang="pt")
+  head
+    meta(charset="UTF-8")
+    title='Gmobil - Exercicio - Previsão do Tempo'
+    link(rel="stylesheet" href="css/tempo.css")
+  body
+    div(class="max-display")
+      div(class="display-top" style="width:70%")
+        img(src=`images/${condition_slug}.svg` class="display-top" style="height: 45px; padding:5px")
+        div(style="display:inline-block")
+          span(style="font-size:48px")=temp
+          span(class="temp-celsius")='°C'
+        div(class="extra-info secondary-text")
+          div=description
+          div=`Umidade: ${humidity}%`
+          div=`Vento: ${wind_speedy}`
+      div(class="display-top" style="width:30%; text-align:right")
+        div(style="font-size: 30px")=city
+        div(class="secondary-text" style="font-size: 20px")=`${date}, ${time}`
+      div(class="container-day-card")
+        each dia in forecast
+          div(class="day-card" title=`${dia.description}`)
+            div=dia.weekday
+            div=dia.date
+            img(src=`images/${dia.condition}.svg` style="height: 30px; padding:5px")
+            div
+              div(class="display-top" style="width: 50%; font-size:13px")=`${dia.max}°`
+              div(class="display-top secondary-text" style="width: 50%; font-size:13px; text-align:right")=`${dia.min}°`
+    span(style="font-size:small")='*Layout baseado no Google Weather'
